@@ -8,7 +8,7 @@ html, body {
 
 body {
     background-color: #023E54;
-    background: linear-gradient(325deg, #023E54, #10AAC0);
+    background: linear-gradient(325deg, rgba(2,62,84, 0.75), rgba(16,170,192, 0.55));
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 125%;
 }
@@ -22,8 +22,7 @@ body {
 .block {
     background-color: whitesmoke;
     border-radius: 20px;
-    box-shadow: -6px 6px 6px #023E54;
-    /*box-shadow: 3px 3px 3px #1b6d6d;*/
+    box-shadow: -3px 6px 6px #023E54;
     margin-bottom: 20px;
     padding: 30px 20px;
 }
@@ -38,6 +37,7 @@ h2, h3 {
     margin: 0;
     padding: 0;
 }
+
 .taskItem {
     list-style: none;
     cursor: default;
@@ -53,6 +53,7 @@ h2, h3 {
     height: .6em;
     line-height: .5em;
 }
+
 .removeTaskItem:hover {
     background-color: #ffafaf;
 }
@@ -61,12 +62,15 @@ h2, h3 {
     clear: both;
     margin: 0 0 15px 0;
 }
+
 .formSearch:last-child {
     margin: 0;
 }
+
 .formSearch label {
     padding: 1px 0;
 }
+
 .formSearch input {
     width: calc(100% - 80px);
     margin-left: 40px;
@@ -115,7 +119,3 @@ h2, h3 {
     padding-top: 3px;
     padding-bottom: 2px;
 }
-
-/*.formInput input[type="submit"]:hover {
-    background-color: #bbb;
-}*/
