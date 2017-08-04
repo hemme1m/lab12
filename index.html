@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Angular To-Do List</title>
+        <title>Lab 12 | Angular To-Do List</title>
         <link rel="stylesheet" href="styles.css">
         <script src="lib/angular/angular.min.js"></script>
         <script src="script.js" charset="utf-8"></script>
@@ -13,8 +13,8 @@
     	<div class="wrapper" ng-app="myApp" ng-controller="myController">
     		<div class="block list">
     			<h2>To-Do List</h2>
-    			<div class="form__input__search">
-    				<input type="text" ng-model="taskSearch"/>
+    			<div class="formSearch">
+    				<input type="text" ng-model="taskSearch" placeholder="Search To-Do List..." />
     			</div>
     			<ul>
     				<li class="taskItem" ng-repeat="task in tasks | filter: taskSearch">
@@ -24,12 +24,11 @@
     			</ul>
     		</div>
     		<form class="block form" ng-submit="addTask(formTaskInput)">
-    			<div class="form__input">
-    				<label><h3>Add New Task:</h3></label><input type="text" ng-model="formTaskInput" required/>
+    			<div class="formInput">
+    				<label><h3>Add New Task:</h3></label><input type="text" ng-model="formTaskInput" placeholder="Enter a new task..." required/>
     			</div>
-				<div class="form__input">
-				<!-- Submit the form by pressing enter or clicking this button -->
-					<input type="submit" value="Add"/>
+				<div class="formInput">
+					<input id="addBtn" type="submit" value="Add"/>
 				</div>
 
     		</form>

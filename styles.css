@@ -7,11 +7,10 @@ html, body {
 }
 
 body {
-    background: #33CCCC;
-    background: linear-gradient(160deg, #fff, #999);
-    /*background: linear-gradient(160deg, #ccffff, #33CCCC);*/
+    background-color: #023E54;
+    background: linear-gradient(325deg, #023E54, #10AAC0);
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 150%;
+    font-size: 125%;
 }
 
 .wrapper {
@@ -21,9 +20,9 @@ body {
 }
 
 .block {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 3px 3px 3px gray;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: -6px 6px 6px #023E54;
     /*box-shadow: 3px 3px 3px #1b6d6d;*/
     margin-bottom: 20px;
     padding: 30px 20px;
@@ -32,6 +31,7 @@ body {
 h2, h3 {
     text-align: center;
     margin-top: -10px;
+    margin-bottom: 10px;
 }
 
 .list ul {
@@ -44,6 +44,7 @@ h2, h3 {
 }
 
 .removeTaskItem {
+    color: #AC3A3A;
     border: 2px solid #cc3a3a;
     border-radius: 50%;
     text-align: center;
@@ -56,49 +57,65 @@ h2, h3 {
     background-color: #ffafaf;
 }
 
-.form__input__search {
+.formSearch {
     clear: both;
     margin: 0 0 15px 0;
 }
-.form__input__search:last-child {
+.formSearch:last-child {
     margin: 0;
 }
-.form__input__search label {
+.formSearch label {
     padding: 1px 0;
 }
-.form__input__search input {
+.formSearch input {
     width: calc(100% - 80px);
     margin-left: 40px;
     font-size: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     border-radius: 3px;
     border: 1px solid silver;
+    padding-left: 5px;
 }
 
-.form__input {
+.formInput {
     clear: both;
     margin: 0 0 15px 0;
 }
-.form__input:last-child {
+
+.formInput:last-child {
     margin: 0;
 }
-.form__input label {
+
+.formInput label {
     padding: 1px 0;
 }
-.form__input input {
+
+.formInput input {
     width: calc(100% - 80px);
     font-size: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     border-radius: 3px;
     border: 1px solid silver;
     margin-left: 40px;
+    padding-left: 5px;
 }
-.form__input input[type="submit"] {
+
+.formInput input[type="submit"] {
     background-color: #ccc;
+    background: linear-gradient(355deg, #DDD, #AAA);
     margin-top: 10px;
-    margin-left: 42px;
+    margin-left: 43px;
+    padding-top: 2px;
+    padding-bottom: 3px;
     outline: none;
 }
-.form__input input[type="submit"]:hover {
-    background-color: #bbb;
+
+.formInput input[type="submit"]:active {
+    background: linear-gradient(355deg, #AAA, #DDD);
+    padding-top: 3px;
+    padding-bottom: 2px;
 }
+
+/*.formInput input[type="submit"]:hover {
+    background-color: #bbb;
+}*/
