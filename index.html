@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Angular To-Do List</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="lib/angular/angular.min.js"></script>
+        <script src="script.js" charset="utf-8"></script>
+    </head>
+    <body>
+    	<div class="wrapper" ng-app="myApp" ng-controller="myController">
+    		<div class="block list">
+    			<h2>To-Do List</h2>
+    			<div class="form__input__search">
+    				<input type="text" ng-model="taskSearch"/>
+    			</div>
+    			<ul>
+    				<li class="taskItem" ng-repeat="task in tasks | filter: taskSearch">
+    					<span class="removeTaskItem" ng-click="removeItemAt($index)">-</span>
+    					<label class="taskItemLabel">{{task}}</label>
+    				</li>
+    			</ul>
+    		</div>
+    		<form class="block form" ng-submit="addTask(formTaskInput)">
+    			<div class="form__input">
+    				<label><h3>Add New Task:</h3></label><input type="text" ng-model="formTaskInput" required/>
+    			</div>
+				<div class="form__input">
+				<!-- Submit the form by pressing enter or clicking this button -->
+					<input type="submit" value="Add"/>
+				</div>
+
+    		</form>
+    	</div>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    background: #33CCCC;
+    background: linear-gradient(160deg, #fff, #999);
+    /*background: linear-gradient(160deg, #ccffff, #33CCCC);*/
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 150%;
+}
+
+.wrapper {
+    width: 60%;
+    max-width: 500px;
+    margin: 40px auto 20px;
+}
+
+.block {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px gray;
+    /*box-shadow: 3px 3px 3px #1b6d6d;*/
+    margin-bottom: 20px;
+    padding: 30px 20px;
+}
+
+h2, h3 {
+    text-align: center;
+    margin-top: -10px;
+}
+
+.list ul {
+    margin: 0;
+    padding: 0;
+}
+.taskItem {
+    list-style: none;
+    cursor: default;
+}
+
+.removeTaskItem {
+    border: 2px solid #cc3a3a;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    width: .6em;
+    height: .6em;
+    line-height: .5em;
+}
+.removeTaskItem:hover {
+    background-color: #ffafaf;
+}
+
+.form__input__search {
+    clear: both;
+    margin: 0 0 15px 0;
+}
+.form__input__search:last-child {
+    margin: 0;
+}
+.form__input__search label {
+    padding: 1px 0;
+}
+.form__input__search input {
+    width: calc(100% - 80px);
+    margin-left: 40px;
+    font-size: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 3px;
+    border: 1px solid silver;
+}
+
+.form__input {
+    clear: both;
+    margin: 0 0 15px 0;
+}
+.form__input:last-child {
+    margin: 0;
+}
+.form__input label {
+    padding: 1px 0;
+}
+.form__input input {
+    width: calc(100% - 80px);
+    font-size: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 3px;
+    border: 1px solid silver;
+    margin-left: 40px;
+}
+.form__input input[type="submit"] {
+    background-color: #ccc;
+    margin-top: 10px;
+    margin-left: 42px;
+    outline: none;
+}
+.form__input input[type="submit"]:hover {
+    background-color: #bbb;
+}
