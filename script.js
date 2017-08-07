@@ -1,7 +1,7 @@
 var app = angular.module('myApp', []);
 
 app.controller('myController', function($scope) {
-	$scope.tasks = ["Mow Lawn", "Water Flowers", "Clean Room", "Buy Groceries"];
+	$scope.tasks = ["Mow Lawn", "Water Flowers", "Clean Room"];
 
 	$scope.addTask = function(task) {
 		if ($scope.tasks.includes(task)) {
